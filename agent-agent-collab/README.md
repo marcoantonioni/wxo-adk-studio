@@ -19,6 +19,9 @@ use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 - you say: I want know about topic history<br>
 
 - you say: I want know about topic geography<br>
+  (*) if done in the same chat note the return to the supervisor agent<br>
+      Step 1<br>
+        Tool : transfer_to_supervisor<br>
 
 - you say: I want know about topic chemistry<br>
 -- agent answer: What is the topic?<br>
