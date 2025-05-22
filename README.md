@@ -7,4 +7,4 @@ The prerequisites for the local installation of a pro-code development environme
 
 ## Agent and Tools collaboration
 
-<img src="./images/agent-tools.jpg" width="300" height="300">
+<img src="./images/agent-tools.png" >
