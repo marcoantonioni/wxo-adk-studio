@@ -12,6 +12,9 @@ Each tool has a detailed description in its own language.
 5. New Chat
 
 ## Suggested script
+Answers may change based on the LLM model.
+use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+
 - you say: Ciao<br>
 
 - you say: Buongiorno<br>
@@ -29,7 +32,8 @@ Each tool has a detailed description in its own language.
 - you say: Guten Morgen<br>
 -- agent answer: What language do you want to use for greetings?<br>
 --- you say: german<br>
----- agent answer: I don't have a function for german greeter available.<br>
+---- possible agent answer: I don't have a function for german greeter available.<br>
+---- possible agent answer: I don't have a function for German greetings. I can only respond with greetings in Italian, English, or Spanish. Would you like to try one of those languages?<br>
 
 
 See 'Reasoning' twist and Steps with proper Tool selection.
