@@ -1,5 +1,5 @@
 # Multilanguage greeter
-This example explain how to create a collaboration with multiple tools.
+This example explain how to create a collaboration among an agent and multiple tools.
 Each tool is designed to answer in a specific language.
 The query in a specific language drive the agent to select the most appropriate tool.
 Each tool has a detailed description in its own language.

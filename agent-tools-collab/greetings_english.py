@@ -3,7 +3,7 @@ from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
 @tool( 
     name="greeter_english", 
-    description="Replies with greetings in english."
+    description="This tool is for english language. Replies with greetings in english."
     )
 def greet() -> str:
     """
