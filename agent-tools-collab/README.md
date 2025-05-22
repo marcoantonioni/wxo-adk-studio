@@ -12,7 +12,7 @@ Each tool has a detailed description in its own language.
 5. New Chat
 
 ## Suggested script
-Answers may change based on the LLM model.
+Answers may change based on the LLM model.<br>
 use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 
 - you say: Ciao<br>
