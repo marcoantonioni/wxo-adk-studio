@@ -1,0 +1,13 @@
+spec_version: v1
+kind: native
+name: agent_tool_collab
+description: An agent that greets you in different langiages using the output from its tools.
+instructions: Reply with greeting messages based on different input languages. Accept italian, english and spanish greetings.
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+style: default
+collaborators: []
+tools: 
+- greeter_italian
+- greeter_english
+- greeter_spanish
+
