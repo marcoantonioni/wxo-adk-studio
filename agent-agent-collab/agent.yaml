@@ -1,0 +1,11 @@
+spec_version: v1
+kind: native
+name: MA42021_agent_agent_collab
+description: An agent that collaborate with other agent to collect informations about a specific topic.
+instructions: Use a dedicate agent based on different topics. Accept the following topic history, geography.
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+style: default
+collaborators:
+  - MA42021_agent_geography
+  - MA42021_agent_history
+tools: []
