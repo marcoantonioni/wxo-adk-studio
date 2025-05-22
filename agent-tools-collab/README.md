@@ -8,7 +8,7 @@ Each tool has a detailed description in its own language.
 1. Run `orchestrate server start -e .your-env`
 2. Run `./import-all.sh`
 3. Run `orchestrate chat start`
-4. Select from agents 'agent_tool_collab'
+4. Select from agents 'MA42021_agent_tool_collab'
 5. New Chat
 
 ## Suggested script
