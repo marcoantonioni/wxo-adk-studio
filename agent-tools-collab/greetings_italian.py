@@ -10,5 +10,5 @@ def greet() -> str:
     Saluti per tutti
     """
 
-    greeting = "Ciao a tutti"
+    greeting = "Ciao a tutti !"
     return greeting

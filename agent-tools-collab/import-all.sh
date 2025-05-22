@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-orchestrate env activate local
+# orchestrate env activate local
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 for python_tool in ./*.py; do
