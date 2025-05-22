@@ -12,23 +12,24 @@ Each tool has a detailed description in its own language.
 5. New Chat
 
 ## Suggested script
-- you say: Ciao
+- you say: Ciao<br>
 
-- you say: Buongiorno
+- you say: Buongiorno<br>
 
-- you say: I'm from London
--- agent answer: What language do you want to use for greetings?
---- you say: english
+- you say: I'm from London<br>
+-- agent answer: What language do you want to use for greetings?<br>
+--- you say: english<br>
 
-- you say: Good morning
+- you say: Good morning<br>
 
-- you say: Buenas dia
+- you say: Buenas dia<br>
 
-- you say: Hola
+- you say: Hola<br>
 
-- you say: Guten Morgen
--- agent answer: What language do you want to use for greetings?
---- you say: german
----- agent answer: I don't have a function for german greeter available.
+- you say: Guten Morgen<br>
+-- agent answer: What language do you want to use for greetings?<br>
+--- you say: german<br>
+---- agent answer: I don't have a function for german greeter available.<br>
+
 
 See 'Reasoning' twist and Steps with proper Tool selection.
