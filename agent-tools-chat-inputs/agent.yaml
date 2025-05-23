@@ -1,0 +1,11 @@
+spec_version: v1
+kind: native
+name: MA42021_agent_tool_chat_inputs
+description: An agent that select first name and last name from text chat and pass the text to tool as input parameters.
+instructions: Reply with greeting messages based on different input languages. Accept italian, english and spanish greetings.
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+style: default
+collaborators: []
+tools: 
+- MA42021_tool_input_params
+
