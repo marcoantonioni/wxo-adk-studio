@@ -1,5 +1,5 @@
 # Chat text to tool input params
-This example explain how to text from chat can used as tool input parameter.
+This example explain how to the text from chat can be used as tool input parameter.
 
 ## Steps to import
 1. Run `orchestrate server start -e .your-env`
