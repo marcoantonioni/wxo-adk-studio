@@ -9,6 +9,6 @@ The prerequisites for the local installation of a pro-code development environme
 
 <img src="./images/agent-tools.png" >
 
-## Tool an Connection
+## Tool and Connection
 
 <img src="./images/tool-connection.png" >
