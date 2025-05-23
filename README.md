@@ -8,3 +8,7 @@ The prerequisites for the local installation of a pro-code development environme
 ## Agent and Tools collaboration
 
 <img src="./images/agent-tools.png" >
+
+## Tool an Connection
+
+<img src="./images/tool-connection.png" >
