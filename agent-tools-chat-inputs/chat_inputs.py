@@ -4,7 +4,7 @@ from ibm_watsonx_orchestrate.agent_builder.tools import tool
     name="MA42021_tool_input_params", 
     description="This tool accecpt in input the first name and last name of type string."
     )
-def greet(firstName:str, lastName:str) -> str:
+def fullName(firstName:str, lastName:str) -> str:
     """
     Join firstName and lastName
 
@@ -13,5 +13,5 @@ def greet(firstName:str, lastName:str) -> str:
     :returns: The full name.    
     """
 
-    fullName = "Your fullname is "+firstName+" "+lastName
+    fullName = "Your fullname is "+firstName+" "+lastName #+" and tool used is MA42021_tool_input_params"
     return fullName
