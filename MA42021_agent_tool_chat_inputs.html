@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>My Assistant</title>
+
+            <script>
+                window.wxOConfiguration = {
+                    orchestrationID: "be11b36e-1d09-40e1-b581-565108bb36e9",
+                    hostURL: "http://localhost:3000",
+                    rootElementID: "root",
+                    showLauncher: true,
+                    chatOptions: {
+                        agentId: "703e1bc3-56f8-4a8c-b32d-b1690133bfff",
+                        agentEnvironmentId: "427261c4-da1a-4366-af33-acf11b9d3524"
+                    },
+                };
+
+                setTimeout(function () {
+                    const script = document.createElement('script');
+                    script.src = `${window.wxOConfiguration.hostURL}/wxoLoader.js?embed=true`;
+                    script.addEventListener('load', function () {
+                    wxoLoader.init();
+                    });
+                    document.head.appendChild(script);
+                }, 0);
+            </script>
+
+</head>
+<body>
+This is WxO Assistant for marco1 MA42021_agent_tool_chat_inputs
+</body>
+</html>
