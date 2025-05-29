@@ -18,5 +18,5 @@ use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 - you say: My first name is James, my last name is Bond, give me my full name.<br>
 -- agent answer: Your full name is Marco Antonioni.
 
-- you say: My name is Jhonny, some one call me by last name and says Stecchino, give me my full name.<br>
--- agent answer: Your full name is Marco Antonioni.
+- you say: My name is Johnny, some one call me by last name and says Stecchino, give me my full name.<br>
+-- agent answer: Your full name is Johnny Stecchino.
