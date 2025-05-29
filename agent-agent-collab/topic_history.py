@@ -11,3 +11,7 @@ def history() -> str:
 
     message = "I know all about the topic history !"
     return message
+
+# TEST
+if __name__ == '__main__':     
+     print(history())

@@ -12,3 +12,7 @@ def greet() -> str:
 
     greeting = "Hola a todos !"
     return greeting
+
+# TEST
+if __name__ == '__main__':     
+     print(greet())

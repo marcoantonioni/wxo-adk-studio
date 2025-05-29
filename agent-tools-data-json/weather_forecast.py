@@ -24,3 +24,7 @@ def weatherForecast(city:str, date:str) -> str:
     
     wf = WeatherForecast(city.upper(), date)
     return json.dumps(wf.__dict__)
+
+# TEST
+if __name__ == '__main__':     
+     print(weatherForecast("Rome", "08/15/2026"))

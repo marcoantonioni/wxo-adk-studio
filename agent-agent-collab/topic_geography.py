@@ -11,3 +11,7 @@ def geography() -> str:
 
     message = "I know all about the topic geography !"
     return message
+
+# TEST
+if __name__ == '__main__':     
+     print(geography())

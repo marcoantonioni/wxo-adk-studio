@@ -15,3 +15,7 @@ def fullName(firstName:str, lastName:str) -> str:
 
     fullName = "Your fullname is "+firstName+" "+lastName #+" and tool used is MA42021_tool_input_params"
     return fullName
+
+# TEST
+if __name__ == '__main__':     
+     print(fullName("Marco", "Antonioni"))
