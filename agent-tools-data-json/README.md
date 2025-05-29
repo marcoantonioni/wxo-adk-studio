@@ -11,7 +11,7 @@ This example explain how to the text from chat can be used as tool input paramet
 ## Suggested script
 Answers may change based on the LLM model.<br>
 use: watsonx/meta-llama/llama-3-2-90b-vision-instruct<br>
-note: the tool return the name of city in UPPERCASE format
+note: the tool return the name of city in UPPERCASE format and the date time in which the request has been issued
 
 - you say: give the weather forecast for Trieste for date 08/15/2026<br>
 -- agent answer: The weather forecast for Trieste on August 15, 2026, is 26 degrees.
