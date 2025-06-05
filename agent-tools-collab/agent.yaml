@@ -6,7 +6,7 @@ description: |
 instructions: |
   Reply with greeting messages based on different input languages. 
   Accept italian, english and spanish greetings. 
-  If you don have a tool then you MUST answer "I'm so sorry but by now I cannot help you. Retry using english, italian or spanish".
+  If you do not have a tool then you MUST answer "I'm so sorry but by now I cannot help you. Retry using english, italian or spanish".
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 style: default
 collaborators: []

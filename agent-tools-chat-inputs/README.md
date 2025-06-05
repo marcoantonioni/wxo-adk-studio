@@ -20,3 +20,10 @@ use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 
 - you say: My name is Johnny, some one call me by last name and says Stecchino, give me my full name.<br>
 -- agent answer: Your full name is Johnny Stecchino.
+
+- you say: Give me my full name
+-- agent answer: What is your first name?
+--- you say: Marco 
+---- agent answer: What is your last name?
+----- you say: Antonioni 
+------ agent answer: Your fullname is Marco Antonioni

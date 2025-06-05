@@ -30,10 +30,7 @@ use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 - you say: Hola<br>
 
 - you say: Guten Morgen<br>
--- agent answer: What language do you want to use for greetings?<br>
---- you say: german<br>
----- possible agent answer: I don't have a function for german greeter available.<br>
----- possible agent answer: I don't have a function for German greetings. I can only respond with greetings in Italian, English, or Spanish. Would you like to try one of those languages?<br>
+-- agent answer: I'm so sorry but by now I cannot help you. Retry using english, italian or spanish.<br>
 
 
 See 'Reasoning' twist and Steps with proper Tool selection.
