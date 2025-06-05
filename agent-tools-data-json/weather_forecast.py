@@ -3,8 +3,8 @@ import json, random, datetime
 
 class WeatherForecast:
     def __init__(self, city: str, date: str):
-        self.city = city
-        self.date = date
+        self.cityName = city
+        self.dateOfForecast = date
         self.temperature = random.randint(-10, 40)
         self.dateOfRequest = datetime.datetime.today().strftime("%Y-%m-%d %H:%M:%S")
 

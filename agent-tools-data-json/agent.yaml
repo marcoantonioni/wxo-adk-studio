@@ -1,8 +1,8 @@
 spec_version: v1
 kind: native
 name: MA42021_agent_tool_data_json
-description: An agent that return wheater informations, select the name of a city and a date from text chat and pass these parameters to tool as input parameters.
-instructions: Reply with a json object with city name and weather forecast.
+description: An agent that give wheater informations #, you must use the name of the city and the date from text chat and pass these parameters to tool as input parameters.
+instructions: For the answer you must use the data of forecast returned by the tool. You must use the city name returned by the tool. You must use the date of request returned by the tool.
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 style: default
 collaborators: []
