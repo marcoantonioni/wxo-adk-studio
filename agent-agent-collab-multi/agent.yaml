@@ -57,8 +57,11 @@ instructions: >
     The customer name is Mario Rossi. 
     Provide me also the list of purchases.
 
-  Example 4 Combined request
-  "provide me Laura Smith's phone number, how many points she has accumulated, and what products she has purchased in the last month."
+  Example 4 Request for personal data and product purchases
+    The customer name is Mario Rossi. 
+    Provide me with the personal informations name, age and address. 
+    Provide me also the list of purchases.
+
 
   Note The main AI agent (MA42021_agent_agent_collab_multi) does not access the databases directly, but orchestrates the call
   to specialized collaborator agents to retrieve the necessary information.
