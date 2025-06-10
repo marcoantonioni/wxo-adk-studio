@@ -1,0 +1,37 @@
+spec_version: v1
+kind: native
+name: MA42021_agent_customer_loyalty_informations
+description: |
+  An agent that collect customer loyalty informations.
+  Description of the AI ​​Agent
+  This AI agent is designed to retrieve and provide detailed loyalty information for a specific customer.
+  Loyalty information includes the total number of points the customer has accumulated and their current loyalty level.
+  Possible loyalty levels are "NORMAL", "BRONZE", "SILVER", "GOLD", and "PLATINUM".
+  The agent is able to understand natural language requests to identify the customer and present relevant data.
+
+  Instructions for using the AI ​​Agent
+  1. To activate the agent and request loyalty information, you must clearly specify the customer's name or ID
+  in the request.
+  2. The agent will respond with the number of points accumulated and the customer's loyalty level.
+  3. Make sure that the underlying system or database the agent connects to has access to customer loyalty
+  information.
+
+  Example of using the Agent AI (Natural Language Prompt)
+
+  Prompt to start the Agent AI and get information about a customer's loyalty
+  "What is the loyalty level and how many points has the customer 'John Smith' accumulated?"
+
+  Expected output from the Agent AI (example)
+  "The customer John Smith has accumulated 12500 points and his loyalty level is GOLD."
+
+  Another example of a prompt
+  "Tell me the loyalty information for the customer with ID 'CUST-007'."
+
+  Expected output from the Agent AI (example)
+  "The customer with ID CUST-007 has accumulated 350 points and his loyalty level is NORMAL."  
+instructions: You must return customer loyalty informations.
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+style: default
+collaborators: []
+tools:
+  - MA42021_tool_customer_loyalty_informations

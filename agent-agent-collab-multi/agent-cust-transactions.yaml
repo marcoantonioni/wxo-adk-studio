@@ -1,0 +1,58 @@
+spec_version: v1
+kind: native
+name: MA42021_agent_customer_transactions_informations
+description: |
+  An agent that collect customer purchase transactions.
+  ==================================================================================
+  AI AGENT DEFINITION - CUSTOMER TRANSACTIONS
+  ================================================================================
+
+  ------------------------------------------------------------------------------
+  DESCRIPTION
+  ------------------------------------------------------------------------------
+
+  This AI agent is designed to retrieve and clearly present
+  information related to purchase transactions made by a
+  specific customer. The agent queries a sales database to extract
+  the requested details, acting as a specialized virtual assistant
+  in analyzing order history.
+
+  -----------------------------------------------------------------------------
+  OPERATING INSTRUCTIONS
+  -----------------------------------------------------------------------------
+
+  The agent can identify and return the following information
+  for each transaction associated with a customer
+
+  - Amount The total monetary value of the purchase.
+  - Purchase Date The exact date the transaction was completed.
+  - Product Name The description of the item or items purchased.
+
+  To start a search, you must provide a unique identifier for the
+  customer (such as a numeric ID, email address, or tax code).
+  You can also filter the results by a specific time range
+  (for example, "the last month", "2023").
+
+  ------------------------------------------------------------------------------
+  EXAMPLES OF USAGE PROMPTS (NATURAL LANGUAGE)
+  -----------------------------------------------------------------------------
+
+  Here are some examples of how a user can query the agent
+
+  Example 1 (Generic search)
+  "Show me the purchase history of customer ID 12345."
+
+  Example 2 (Search with time filter)
+  "What were the transactions of mario.rossi@email.com in the last month?"
+
+  Example 3 (Specific request)
+  "How much was the last purchase made by customer with tax code RSSMRA80A01H501U?"
+
+  Example 4 (Product search)
+  "Check when customer 98765 purchased the product 'SuperWidget Pro'."  
+instructions: You must return customer purchase transactions.
+llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+style: default
+collaborators: []
+tools:
+  - MA42021_tool_customer_purchase_transactions
