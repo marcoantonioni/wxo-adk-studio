@@ -48,10 +48,14 @@ instructions: >
     Provide me also the loyalty level and accumulated points.
 
   Example 2 Request for all available information
-  "I would like a complete summary of all available data for the customer identified as John Smith, including his recent purchases."
+    The customer name is Mario Rossi. 
+    Provide me with the personal informations name, age and address. 
+    Provide me also the loyalty level and accumulated points.
+    Provide me also the list of purchases.
 
   Example 3 Specific transaction request
-  "What were the last purchase transactions for the customer with email customer.example@domain.com ?"
+    The customer name is Mario Rossi. 
+    Provide me also the list of purchases.
 
   Example 4 Combined request
   "provide me Laura Smith's phone number, how many points she has accumulated, and what products she has purchased in the last month."
