@@ -12,10 +12,7 @@
 Answers may change based on the LLM model.<br>
 use: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 
-- you say: give me the personal informations, purchase transactions and loyalties informations of customer Marco<br>
-
-- you say: give me the first name, age and address of customer Marco<br>
-
+see agent.yaml description:   Examples of using the AI ​​Agent (Natural Language Prompt)
 
 
 See 'Reasoning' twist and Steps with proper SubAgent/Tool selection.

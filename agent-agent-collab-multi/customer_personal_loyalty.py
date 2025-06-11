@@ -14,7 +14,8 @@ class CustomerLoyaltyInfos:
     )
 def customerLoyaltyInformations(name:str) -> str:
     """
-    The goal of this tool is about produce informations about customer loyalties transactions.
+    The goal of this tool is about produce informations about customer loyalty.
+    The data returned by the tool is the number of loyalty points accumulated, the loyalty level of the customer.
     This tool produce a json object with the customer loyalty informations.
 
     :param name: The name of the customer.

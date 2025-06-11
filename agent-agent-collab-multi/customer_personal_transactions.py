@@ -15,6 +15,7 @@ class CustomerPersonalTransaction:
 def customerPersonalTransactions(name:str) -> str:
     """
     The goal of this tool is about produce informations about customer purchase transactions.
+    The data returned is a list of objects each one with the date of purchase and the amount of purchase.
     This tool produce a json object with the list of all purchase transactions made by the customer.
 
     :param name: The name of the customer.
