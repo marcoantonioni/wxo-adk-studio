@@ -30,7 +30,9 @@ description: |
   Expected output from the Agent AI (example)
   "The customer with ID CUST-007 has accumulated 350 points and his loyalty level is NORMAL."  
 instructions: You must return customer loyalty informations.
+
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+
 style: default
 collaborators: []
 tools:

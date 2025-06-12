@@ -45,7 +45,9 @@ description: |
   "Find contact details for customer Mario Rossi, born on 05/15/1985."
 
 instructions: You must return customer personal informations.
+
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+
 style: default
 collaborators: []
 tools:

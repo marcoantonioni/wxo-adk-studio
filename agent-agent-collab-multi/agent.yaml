@@ -69,6 +69,7 @@ instructions: >
   The main agent MA42021_agent_agent_collab_multi must aggregate all the responses from collaborator agents.
 
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+
 style: default
 collaborators:
   - MA42021_agent_customer_personal_informations

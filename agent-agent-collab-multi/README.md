@@ -16,3 +16,7 @@ see agent.yaml description:   Examples of using the AI ​​Agent (Natural Lang
 
 
 See 'Reasoning' twist and Steps with proper SubAgent/Tool selection.
+
+# hide collaborator agents
+
+see: hide-agents-local.sh
