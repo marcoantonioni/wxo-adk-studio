@@ -5,8 +5,8 @@ name: MA42021_agent_tool_connection
 description: |
   An agent that accept requests about connection informations.
 instructions: |
-  Accept a request for connection informations.
-  Reply with a text message. 
+  You must give detailed informations about the tool connection.
+  You must reply with a text message containing all values of oject Connections returned by MA42021_tool_connection tool. 
 llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
 style: default
 collaborators: []

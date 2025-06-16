@@ -5,7 +5,7 @@ from ibm_watsonx_orchestrate.client.connections import ConnectionType #, Expecte
 
 import json
 
-CONN_BASIC_AUTH = 'app_id_tool_connection'
+CONN_BASIC_AUTH = 'CONN_TC'
 
 #type = ConnectionType.BASIC_AUTH
 #type = ConnectionType.API_KEY_AUTH
@@ -13,23 +13,30 @@ CONN_BASIC_AUTH = 'app_id_tool_connection'
 #type = ConnectionType.KEY_VALUE
 #type = ConnectionType.OAUTH_ON_BEHALF_OF_FLOW
 
+class ConnectionInfos:
+    def __init__(self, u: str, p: str, ur):
+        self.un : str = u
+        self.pa : str = p
+        self.ur : str = ur
+
+
 @tool( 
     name="MA42021_tool_connection", 
     description="This tool answer with connection informations.",
-    permission=ToolPermission.READ_ONLY,
+    #permission=ToolPermission.READ_ONLY,
     expected_credentials=[
         {"app_id": CONN_BASIC_AUTH, "type": ConnectionType.BASIC_AUTH}
     ],
 )
-def connections() -> str:
+def getConnInfos() -> str:
     """
     Show connection informations
+
+    Returns a JSON object with connection informations.
     """
 
-    #print(connections)    
-
     connectionInfos= "n/a"
-    otherInfos=""
+    ci: ConnectionInfos;
     try:
         #url="http://test"
         #username="n/a"
@@ -37,16 +44,23 @@ def connections() -> str:
         url = f"{connections.basic_auth(CONN_BASIC_AUTH).url}"
         username = connections.basic_auth(CONN_BASIC_AUTH).username
         password = connections.basic_auth(CONN_BASIC_AUTH).password
-
-        connectionInfos = "Connection configuration: "+username+" / "+password + " / " + url  
-        otherInfos=str(connections)
+        connectionInfos = f"Connection configuration: {username}/{password}/{url}"  
+        ci = ConnectionInfos(username, password, url)
     except:
         print("===>> EXCEPTION during execution of TOOL")
-        connectionInfos = "execution of Connection informations insufficient, "+otherInfos
+        connectionInfos = "execution of Connection informations insufficient."
+        ci = ConnectionInfos(u="n/a", p="n/a", ur="n/a")
     
     print("===>> MA42021_tool_connection: "+connectionInfos)
-    return connectionInfos
+    return json.dumps( ci.__dict__ )
 
 # TEST
 if __name__ == '__main__':     
-     print(connections())
+     print(getConnInfos())
+
+"""
+export WXO_SECURITY_SCHEMA_CONN_TC=basic_auth
+export WXO_CONNECTION_CONN_TC_username=username
+export WXO_CONNECTION_CONN_TC_password=password
+export WXO_CONNECTION_CONN_TC_url=http://localhost:9876
+"""

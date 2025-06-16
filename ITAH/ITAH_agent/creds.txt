@@ -1,0 +1,3 @@
+ITAH_USERNAME=admin
+ITAH_PASSWORD=admin
+ITAH_URL=https://10.0.0.6:9443/automationservices/rest/ITAH/IT%20Accessory%20Hub%20REST%20backend%20services

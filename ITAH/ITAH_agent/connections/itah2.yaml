@@ -1,0 +1,9 @@
+spec_version: v1
+kind: connection
+app_id: ITAH2B
+environments:
+    draft:
+        kind: bearer
+        type: team
+        sso: false
+        server_url: https://test

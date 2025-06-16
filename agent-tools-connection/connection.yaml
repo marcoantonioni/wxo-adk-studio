@@ -1,6 +1,6 @@
 spec_version: v1
 kind: connection
-app_id: app_id_tool_connection
+app_id: CONN_TC
 environments:
     draft:
         kind: basic

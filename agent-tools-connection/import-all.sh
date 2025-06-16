@@ -3,7 +3,7 @@ set -x
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-APP_ID=app_id_tool_connection
+APP_ID=CONN_TC
 orchestrate connections remove --app-id $APP_ID
 orchestrate connections add --app-id $APP_ID
 orchestrate connections import --file ${SCRIPT_DIR}/connection.yaml

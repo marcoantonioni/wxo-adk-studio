@@ -1,0 +1,9 @@
+spec_version: v1
+kind: connection
+app_id: ITAH
+environments:
+    draft:
+        kind: basic
+        type: team
+        sso: false
+        server_url: https://10.0.0.6:9443/automationservices/rest/ITAH/IT%20Accessory%20Hub%20REST%20backend%20services

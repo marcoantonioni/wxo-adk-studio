@@ -1,0 +1,275 @@
+---
+openapi: 3.0.1
+info:
+  title: ITAH_Backend_Services
+  version: tipSnapshot
+  description: IT Accessory Hub REST backend services
+  x-ibm-application-id: ITAH_Backend_Services
+  x-ibm-application-name: ITAH_Backend_Services
+servers:
+- url: server_url:https://10.0.0.6:9443/automationservices/rest/ITAH/IT%20Accessory%20Hub%20REST%20backend%20services
+security:
+- basic_auth: []
+paths:
+  "/ITAH_GetOrderStatus":
+    post:
+      summary: ITAH_GetOrderStatus
+      description: Gets order status for a user
+      operationId: ITAH_GetOrderStatus
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/ITAH_GetOrderStatus_input"
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/ITAH_GetOrderStatus_output"
+        '400':
+          description: The request contains invalid parameters, or they are missing.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '404':
+          description: The requested resource does not exist.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '409':
+          description: The request cannot be processed because of one or more conflicts
+            in the request.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+  "/ITAH_GetOrdersByUser":
+    post:
+      summary: ITAH_GetOrdersByUser
+      description: Gets all orders for a user
+      operationId: ITAH_GetOrdersByUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/ITAH_GetOrdersByUser_input"
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/ITAH_GetOrdersByUser_output"
+        '400':
+          description: The request contains invalid parameters, or they are missing.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '404':
+          description: The requested resource does not exist.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '409':
+          description: The request cannot be processed because of one or more conflicts
+            in the request.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+  "/ITAH_CreateSampleOrders":
+    post:
+      summary: ITAH_CreateSampleOrders
+      description: Creates sample orders for a user
+      operationId: ITAH_CreateSampleOrders
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/ITAH_CreateSampleOrders_input"
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/ITAH_CreateSampleOrders_output"
+        '400':
+          description: The request contains invalid parameters, or they are missing.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '404':
+          description: The requested resource does not exist.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '409':
+          description: The request cannot be processed because of one or more conflicts
+            in the request.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+  "/ITAH_CleanupUserOrders": 
+    post: 
+      summary: "ITAH_CleanupUserOrders"
+      description: "Deletes all orders for a given user."
+      operationId: "ITAH_CleanupUserOrders"
+      requestBody: 
+        content: 
+          application/json: 
+            schema: 
+              $ref: "#/components/schemas/ITAH_CleanupUserOrders_input"
+        required: "true"
+      responses: 
+        200: 
+          description: "OK"
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/ITAH_CleanupUserOrders_output"
+        400: 
+          description: "The request contains invalid parameters, or they are missing."
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        404: 
+          description: "The requested resource does not exist."
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        409: 
+          description: "The request cannot be processed because of one or more conflicts in the request."
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+        500: 
+          description: "Internal server error."
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/IT_Accessory_Hub_REST_backend_servicesException"
+components:
+  schemas:
+    ITAH_GetOrderStatus_input:
+      type: object
+      properties:
+        referenceID:
+          type: string
+      description: Input schema for the operation ITAH_GetOrderStatus
+      x-ibm-parameter-wrapper: true
+    ITAH_GetOrderStatus_output:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        orderStatus:
+          type: string
+        reason:
+          type: string
+      description: Response schema of operation ITAH_GetOrderStatus
+      x-ibm-parameter-wrapper: true
+    ITAH_CreateSampleOrders_input:
+      type: object
+      properties:
+        userID:
+          type: string
+        quantity:
+          type: integer
+          format: int32
+      description: Input schema for the operation ITAH_CreateSampleOrders
+      x-ibm-parameter-wrapper: true
+    ITAH_CreateSampleOrders_output:
+      type: object
+      properties:
+        message:
+          type: string
+      description: Response schema of operation ITAH_CreateSampleOrders
+      x-ibm-parameter-wrapper: true
+    ITAH_GetOrdersByUser_input:
+      type: object
+      properties:
+        userEmail:
+          type: string
+      description: Input schema for the operation ITAH_GetOrdersByUser
+      x-ibm-parameter-wrapper: true
+    ITAH_GetOrdersByUser_output:
+      type: object
+      properties:
+        referenceIDs:
+          type: array
+          items:
+            type: string
+      description: Response schema of operation ITAH_GetOrdersByUser
+      x-ibm-parameter-wrapper: true
+    ITAH_CleanupUserOrders_input: 
+      type: "object"
+      properties: 
+        userEmail: 
+          type: "string"
+      description: "Input schema for the operation ITAH_CleanupUserOrders"
+      x-ibm-parameter-wrapper: "true"
+    ITAH_CleanupUserOrders_output: 
+      type: "object"
+      properties: 
+        message: 
+          type: "string"
+      description: "Response schema of operation ITAH_CleanupUserOrders"
+      x-ibm-parameter-wrapper: "true"
+    IT_Accessory_Hub_REST_backend_servicesException:
+      title: Exception
+      required:
+      - message
+      type: object
+      properties:
+        code:
+          type: string
+          description: Exception code or Message ID of the exception.
+        message:
+          type: string
+          description: Message text of the exception.
+        message_parameters:
+          type: array
+          description: Message text parameters of the exception.
+          items:
+            type: string
+            description: An array of parameter strings that were inserted into the
+              error message.
+      description: Exception object describing error details.
+  securitySchemes:
+    basic_auth:
+      type: http
+      scheme: basic
